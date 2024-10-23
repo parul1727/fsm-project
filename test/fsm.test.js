@@ -35,6 +35,12 @@ describe('fsm test for valid transition', () => {
         expect(fsm('S0', [0], transitions, states)).to.equal('S0');
         expect(fsm('S1', [1, 0, 0, 0, 1], transitions, states)).to.equal('S1');
     });
+
+    it('should handle a long sequence of valid inputs', () => {
+        const longSequenceInput = Array(1000).fill(0).concat(Array(1000).fill(1));
+        const result = fsm('S0', longSequenceInput, transitions, states);
+        expect(result).to.equal('S0');
+    });
 });
 
 describe('fsm test for invalid transition with valid input and current state', () => {
