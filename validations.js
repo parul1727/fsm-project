@@ -8,7 +8,7 @@ const VALID_INPUT = [0, 1];
  * @param {boolean} zeroIsValid, if true the function counts zero as valid
  * @returns {boolean} true: if value is valid, false: if value is invalid
  */
-function isValid(value, zeroIsValid) {
+export function isValid(value, zeroIsValid) {
     return (zeroIsValid && value === 0) || !!Number(value);
 }
 
