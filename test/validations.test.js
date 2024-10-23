@@ -1,7 +1,7 @@
 // validations.test.js
 
 import { expect } from "chai";
-import { isValid, isInputValid, isCurrentStateValid } from "../validations.js";
+import { isValid, isInputValid, isCurrentStateValid } from "../src/util/validations.js";
 
 describe('isValid', () => {
     it('should return false for 0 if isZeroValid is undefined or false', () => {

@@ -1,6 +1,6 @@
 // fsm.js
 
-import { isCurrentStateValid, isInputValid } from "./validations.js";
+import { isCurrentStateValid, isInputValid } from "./util/validations.js";
 
 function getNextState(input, currentState, transitions) {
     /**

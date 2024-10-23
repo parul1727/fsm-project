@@ -1,7 +1,7 @@
 // fsm.test.js
 
 import { expect } from 'chai';
-import fsm from '../fsm.js';
+import fsm from '../src/fsm.js';
 
 describe('fsm test for valid transition', () => {
     const transitions = {

@@ -1,6 +1,6 @@
 // index.js
 
-import fsm from './fsm.js';
+import fsm from './src/fsm.js';
 
 const states = ['S0', 'S1', 'S2'];
 const initialState = 'S0';
